@@ -7,42 +7,55 @@
 
 :root {
   /* Used for: block comment, hr, ... */
-  --border-color: var(--bg-1);
+  --border-color: var(--bg-0);
 
   /* Fonts */
-  --text-font: 'Jetbrains Mono';
-  --header-font: 'Space Grotesk';
-  --code-font: 'Jetbrains Mono';
+  --text-font: 'Merriweather';
+  --header-font: 'Noto Sans';
+  --code-font: 'Inconsolata';
 }
 
 html {
-  background-color: var(--bg-0);
+  background-color: var(--bg-2);
   color: var(--text-0);
   font-family: var(--text-font);
   line-height: 1.6em;
 }
 
+body {
+  margin: 12px;
+  transition: margin 0.3s;
+}
+
 .content {
-  max-width: 944px;
+  background-color: var(--bg-1);
+  border-width: 6px;
+  border-style: none;
+  border-radius: 12px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 12px 24px 24px 24px;
   word-wrap: break-word;
 }
 
-@media all and (min-width:640px) {
+@media all and (max-width:720px) {
   html {
-    font-size: 16.5px;
+    font-size: 13px;
+  }
+
+  body {
+    margin: 12px 0px;
   }
 }
 
 @media all and (min-width:720px) {
   html {
-    font-size: 17px;
+    font-size: 13.5px;
   }
 }
 
 @media all and (min-width:960px) {
   html {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
