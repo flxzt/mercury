@@ -27,6 +27,13 @@ body {
   transition: margin 0.3s;
 }
 
+.hor-sep {
+  height: 1px;
+  width: 100%;
+  margin: 12px 0;
+  border-top: 1px solid var(--bg-0);
+}
+
 .content {
   background-color: var(--bg-1);
   border-width: 6px;
@@ -43,8 +50,6 @@ body {
 }
 
 .footer {
-  border-top: 1px solid var(--bg-0);
-  padding-top: 12px;
   text-align: center;
 }
 

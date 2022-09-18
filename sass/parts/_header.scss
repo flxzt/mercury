@@ -2,7 +2,7 @@
   font-size: 3em;
   line-height: 100%;
   font-family: var(--header-font);
-  margin: 4rem 0px 1rem 0px;
+  margin: 0rem 0px 1rem 0px;
 }
 
 .centered-header {
@@ -29,12 +29,33 @@ header .main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
+  align-items: stretch;
+  gap: 1em;
+  margin-bottom: 6px;
   font-size: 1.5rem;
 
-  /* Otherwise header and menu is too close on small screens*/
-  margin-bottom: 10px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.page-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.page-title {
+  flex-grow: 0;
+}
+
+.page-description {
+  flex-grow: 2;
+  color: var(--text-1);
+  margin: 0.2em 0;
 }
 
 .socials {
