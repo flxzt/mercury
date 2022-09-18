@@ -12,7 +12,8 @@ highlight_theme = "ayu-dark"
 [extra]
 toc = true
 use_cdn = false
-favicon = "/icon/favicon.png"
+# favicon = "/images/favicon.png"
+# logo = "/images/logo.png"
 theme = "auto"      
 
 menu = [
