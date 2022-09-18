@@ -38,6 +38,16 @@ body {
   word-wrap: break-word;
 }
 
+.main-content {
+  padding-bottom: 24px;
+}
+
+.footer {
+  border-top: 1px solid var(--bg-0);
+  padding-top: 12px;
+  text-align: center;
+}
+
 @media all and (max-width:720px) {
   html {
     font-size: 13px;

@@ -29,6 +29,11 @@ socials = [
 custom_css = []
 
 [extra.analytics]
-enabled = true
+enabled = false
 goatcounter_user = "your_user"
 goatcounter_host = "example.com"    # default= goatcounter.com
+
+[extra.footer]
+enabled = false
+# If footer is enabled, you can either set the text here or overwrite the footer.html template for custom html
+text = "John Doe - © 2022"

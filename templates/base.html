@@ -8,10 +8,22 @@
     <div class="content">
         {% include "partials/nav.html" %}
 
-        {# Post page is the default #}
-        {% block main_content %}
+        <div class="main-content">
+            {# Post page is the default #}
+            {% block main_content %}
             Nothing here?!
-        {% endblock main_content %}
+            {% endblock main_content %}
+        </div>
+
+        {% if config.extra.footer.enabled | default(value=false) %}
+        <footer>
+            <div class="footer">
+                <small>
+                    {% include "partials/footer.html" %}
+                </small>
+            </div>
+        </footer>
+        {% endif %}
     </div>
 </body>
 
