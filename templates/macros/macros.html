@@ -172,3 +172,16 @@
     </article>
 </main>
 {% endmacro content %}
+
+{% macro gallery(assets, width) %}
+<div class="gallery">
+{% for asset in assets -%}
+  {%- if asset is matching("[.](jpg|png)$") -%}
+    {% set image = resize_image(path=asset, width=width, op="fit_width") %}
+    <a class="gallery-image" href="{{ get_url(path=asset) }}" target="_blank">
+    <img src="{{ image.url }}" />
+    </a>
+  {%- endif %}
+{%- endfor %}
+</div>
+{% endmacro gallery %}
