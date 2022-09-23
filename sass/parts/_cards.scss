@@ -1,0 +1,44 @@
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    padding: 12px 0;
+}
+
+.card {
+    min-height: 200px;
+    background: linear-gradient(30deg, var(--bg-2) -50%, var(--bg-1) 150%);
+    border: 1px solid var(--bg-2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-info {
+    padding: 0px 24px 24px 24px;
+}
+
+.card-title {
+    margin-top: 0.7em;
+}
+
+.card-image {
+    border: unset;
+    width: 100%;
+}
+
+.card-image-placeholder {
+  height: 12px;
+  width: 100%;
+}
+
+.card-description {
+    margin-top: 0.5em;
+    overflow: hidden;
+}
+
+@media all and (max-width:720px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
