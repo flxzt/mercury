@@ -1,5 +1,6 @@
-base_url = "https://not-matthias.github.io/apollo/"
-title = "not-matthias"
+base_url = "https://mercury.flxzt.net/"
+title = "Mercury Theme"
+description = "Modern and minimalistic blog theme - Fork of the Apollo theme"
 build_search_index = true
 generate_feed = true
 compile_sass = true
@@ -11,9 +12,9 @@ highlight_theme = "ayu-dark"
 
 [extra]
 use_cdn = false
-# favicon = "/images/favicon.png"
-# logo = "/images/logo.png"
-theme = "auto"      
+favicon = "/images/favicon.svg"
+logo = "/images/logo.svg"
+theme = "auto"      # either `auto`, `dark` or `light`
 
 menu = [
     { name = "/posts", url = "/posts", weight = 1 },
@@ -22,8 +23,8 @@ menu = [
 ]
 
 socials = [
-    { name = "twitter", url = "https://twitter.com/not_matthias", icon = "twitter" },
-    { name = "github", url = "https://github.com/not-matthias/", icon = "github" },
+    { name = "twitter", url = "https://twitter.com/flxzt", icon = "twitter" },
+    { name = "github", url = "https://github.com/flxzt/mercury", icon = "github" },
 ]
 
 custom_css = []
@@ -34,6 +35,6 @@ goatcounter_user = "your_user"
 goatcounter_host = "example.com"    # default= goatcounter.com
 
 [extra.footer]
-enabled = false
-# If footer is enabled, you can either set the text here or overwrite the footer.html template for custom html
+enabled = true
+# If footer is enabled, you can either set the text here or overwrite the `partials/footer.html` template for custom html
 text = "John Doe - © 2022"

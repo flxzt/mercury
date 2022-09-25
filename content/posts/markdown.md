@@ -1,8 +1,6 @@
 +++
 title = "Markdown Test"
 date = "2022-01-01"
-[extra]
-toc = true
 +++
 
 ## Code Block

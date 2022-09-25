@@ -1,8 +1,12 @@
-# apollo
+# mercury
 
-Modern and minimalistic blog theme powered by [Zola](getzola.org). See a live preview [here](https://not-matthias.github.io/apollo).
+**Fork of the [Apollo](https://github.com/not-matthias/apollo) theme.**
 
-<sub><sup>Named after the greek god of knowledge, wisdom and intellect</sup></sub>
+---
+
+Modern and minimalistic blog theme powered by [Zola](getzola.org). See a live preview [here](https://mercury.flxzt.net).
+
+<sub><sup>Named after the greek god of eloquence, trickery and thieves</sup></sub>
 
 <details open>
   <summary>Dark theme</summary>
@@ -29,21 +33,61 @@ Modern and minimalistic blog theme powered by [Zola](getzola.org). See a live pr
 
 1. Download the theme
 ```
-git submodule add https://github.com/not-matthias/apollo themes/apollo
+git submodule add https://github.com/flxzt/mercury themes/mercury
 ```
 
-2. Add `theme = "apollo"` to your `config.toml`
+2. Add `theme = "mercury"` to your `config.toml`
 3. Copy the example content
 
 ```
-cp themes/apollo/content content
+cp themes/mercury/content content
 ```
 
-## Options
+## Features
 
-### Additional stylesheets
+### Site configuration
 
-You can add stylesheets to override the theme:
+Enable analytics with [Goatcounter](https://www.goatcounter.com/):
+
+```toml
+[extra.analytics]
+enabled = true
+goatcounter_user = "your_user"
+goatcounter_host = "goatcounter.com"    # default= goatcounter.com
+
+```
+
+Using a CDN for fonts
+```
+[extra]
+use_cdn = true
+```
+
+Add a website favicon and logo before the site the site header
+```toml
+[extra]
+favicon = "/images/favicon.png"
+logo = "/images/logo.png"
+```
+
+Set a color scheme:
+```toml
+[extra]
+theme = "auto"      # either `auto`, `dark` or `light`
+```
+
+Social buttons can be added. The available icon names are the file names without `.svg` in `static/social_icons/`.
+
+```toml
+[extra]
+socials = [
+    { name = "twitter", url = "https://twitter.com/flxzt", icon = "twitter" },
+    { name = "github", url = "https://github.com/flxzt/mercury", icon = "github" },
+]
+```
+
+You can add stylesheets to override the theme.
+These filenames are relative to the root of the site. In this example, the two CSS files would be in the `static` folder.
 
 ```toml
 [extra]
@@ -53,8 +97,49 @@ stylesheets = [
 ]
 ```
 
-These filenames are relative to the root of the site. In this example, the two CSS files would be in the `static` folder.
+Adding a footer:
 
-## References
+```toml
+[extra.footer]
+enabled = true
+# You can either set the footer text here or overwrite the footer.html template for custom html
+text = "John Doe - © 2022"
+```
 
-This theme is based on [archie-zola](https://github.com/XXXMrG/archie-zola/).  
+### Pages
+
+To enable a table of contents, add this to the page frontmatter:
+
+```toml
+[extra]
+toc = true
+```
+
+When using the `cards.html` section template, pages can have a card image:
+```toml
+[extra]
+card_image = "absolute/path/to/image.png"
+```
+
+### Sections
+
+To specify a different path for a section, add:
+```toml
+[extra]
+section_path = "absolute/section/path/_index.md"
+```
+
+### Templates
+Use custom templates by adding the `template = "templates/<name>.html` variable to the page or section frontmatter.
+
+- A cards view: The `cards.html` section template.
+
+
+
+### Shortcodes
+
+There is a gallery shortcode which searches the page directory for images and displays them as a foto gallery. Usage in markdown:
+
+```markdown
+{{ gallery() }}
+```
