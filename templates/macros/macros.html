@@ -121,8 +121,9 @@
         {% endif %}
 
         {# Optional table of contents #}
-        {% if config.extra.toc | default(value=false) %}
+        {% if page.extra.toc | default(value=false) %}
             {% if page.toc %}
+            <div class="toc">
                 <h1>Table of Contents</h1>
                 <ul>
                 {% for h1 in page.toc %}
@@ -150,6 +151,7 @@
                     </li>
                 {% endfor %}
                 </ul>
+            </div>
             {% endif %}
         {% endif %}
 

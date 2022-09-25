@@ -10,7 +10,6 @@ highlight_code = true
 highlight_theme = "ayu-dark"
 
 [extra]
-toc = true
 use_cdn = false
 # favicon = "/images/favicon.png"
 # logo = "/images/logo.png"
