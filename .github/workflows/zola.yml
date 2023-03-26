@@ -1,24 +1,18 @@
-name: Zola
+name: Zola on GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
+    branches:
+      - main
 
 jobs:
   build:
+    name: Publish site
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v3
-      
-    - name: Build and deploy
-      uses: shalzz/zola-deploy-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout main
+        uses: actions/checkout@v3
+      - name: Build and deploy
+        uses: shalzz/zola-deploy-action@v0.17.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
