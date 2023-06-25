@@ -174,6 +174,18 @@ webapp = "/path/to/webapp/index.html
 
 ### Shortcodes
 
+To be able to write pages in raw HTML, use the `raw` shortcode:
+
+```markdown
+{% raw() %}
+<ul>
+    <li>Write</li>
+    <li>raw</li>
+    <li>HTML</li>
+</ul>
+{% end %}
+```
+
 There is a gallery shortcode which searches the page directory for images and displays them as a foto gallery:
 
 ```markdown
