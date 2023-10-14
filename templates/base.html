@@ -26,4 +26,8 @@
     </div>
 </body>
 
+{% if config.extra.temml | default(value=false) %}
+<script>renderMathInElement(document.body);</script>
+{% endif %}
+
 </html>

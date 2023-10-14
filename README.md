@@ -53,11 +53,11 @@ Add a website favicon:
 favicon = "/images/favicon.png"
 ```
 
-Enable math rendering inline with `$` and blocks with `$$` pairs through MathJax:
+Enable math rendering inline with `$` and blocks with `$$` pairs through [Temml](https://temml.org/):
 
 ```toml
 [extra]
-mathjax = true
+temml = true
 ```
 
 Set a color scheme:

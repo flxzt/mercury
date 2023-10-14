@@ -62,6 +62,11 @@ footer {
     text-align: center;
 }
 
+/* disable temml equation numbering */
+.tml-eqn::before {
+  content: "";
+}
+
 @media all and (max-width:719px) {
     html {
         font-size: 14px;
