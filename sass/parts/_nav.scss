@@ -1,4 +1,7 @@
 header {
+    position: sticky;
+    z-index: 1;
+    top: 12px;
     background-color: var(--accent-bg);
     box-shadow: 0 2px 6px var(--bg-2);
     border-radius: 9px;
