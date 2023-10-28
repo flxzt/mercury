@@ -16,35 +16,34 @@
         </div>
 
         {% if config.extra.footer.enabled | default(value=false) %}
-
-        <footer>
-            <small>
-                {% include "partials/footer.html" %}
-            </small>
-        </footer>
+            <footer>
+                <small>
+                    {% include "partials/footer.html" %}
+                </small>
+            </footer>
         {% endif %}
     </div>
 </body>
 
 {% if config.extra.temml | default(value=false) %}
-<script>renderMathInElement(
-    document.body,
-    {
-        delimiters: [
-            { left: "$$", right: "$$", display: true },
-            // Put $ after $$.
-            {left: "$", right: "$", display: false},
-            { left: "\\(", right: "\\)", display: false },
-            { left: "\\begin{equation}", right: "\\end{equation}", display: true },
-            { left: "\\begin{align}",    right: "\\end{align}", display: true },
-            { left: "\\begin{alignat}",  right: "\\end{alignat}", display: true },
-            { left: "\\begin{gather}",   right: "\\end{gather}", display: true },
-            { left: "\\begin{CD}",       right: "\\end{CD}", display: true },
-            { left: "\\begin{multline}", right: "\\end{multline}", display: true },
-            { left: "\\[", right: "\\]", display: true }
-        ]
-    }
-);</script>
+    <script>renderMathInElement(
+        document.body,
+        {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                // Put $ after $$.
+                {left: "$", right: "$", display: false},
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\begin{equation}", right: "\\end{equation}", display: true },
+                { left: "\\begin{align}",    right: "\\end{align}", display: true },
+                { left: "\\begin{alignat}",  right: "\\end{alignat}", display: true },
+                { left: "\\begin{gather}",   right: "\\end{gather}", display: true },
+                { left: "\\begin{CD}",       right: "\\end{CD}", display: true },
+                { left: "\\begin{multline}", right: "\\end{multline}", display: true },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        }
+    );</script>
 {% endif %}
 
 </html>
