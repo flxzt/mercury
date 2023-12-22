@@ -15,9 +15,10 @@ highlight_code = true
 highlight_theme = "ayu-dark"
 
 [extra]
-use_cdn = false
+introduction = "Welcome to my awesome website!"
 favicon = "/images/favicon.svg"
 theme = "auto"      # either `auto`, `dark` or `light`
+use_cdn = false
 temml = true
 
 menu = [

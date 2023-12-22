@@ -45,6 +45,8 @@
 
 .card-image {
     width: 100%;
+    max-height: 400px;
+    object-fit: contain;
 }
 
 .card-image-placeholder {

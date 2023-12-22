@@ -39,11 +39,10 @@ goatcounter_host = "goatcounter.com"    # default: goatcounter.com
 
 ```
 
-Use CDN for fonts:
-
+An introduction displayed on top of the top-level index page:
 ```toml
 [extra]
-use_cdn = true
+introduction = "Welcome to my awesome website!"
 ```
 
 Add a website favicon:
@@ -53,18 +52,25 @@ Add a website favicon:
 favicon = "/images/favicon.png"
 ```
 
-Enable math rendering inline with `$` and blocks with `$$` pairs through [Temml](https://temml.org/):
-
-```toml
-[extra]
-temml = true
-```
-
 Set a color scheme:
 
 ```toml
 [extra]
 theme = "auto"      # either `auto`, `dark` or `light`
+```
+
+Use CDN for fonts:
+
+```toml
+[extra]
+use_cdn = true
+```
+
+Enable math rendering inline with `$` and blocks with `$$` pairs through [Temml](https://temml.org/):
+
+```toml
+[extra]
+temml = true
 ```
 
 Social buttons can be added. The available icon names are the file names without `.svg` in `static/social_icons/`.
@@ -142,6 +148,16 @@ If this is set, it is possible to specify how many pages should be shown:
 index_n_pages = 7
 ```
 
+To display the subsection as cards instead of a pages list, use:
+```toml
+index_cards = true
+```
+
+
+The order of the subsections is determined by the weight specified in the subsection:
+```toml
+weight = 0
+```
 
 ### Templates
 

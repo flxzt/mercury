@@ -2,6 +2,10 @@
 
 {% block main_content %}
     <main>
+        {% if config.extra.introduction %}
+            <section class="introduction">{{ config.extra.introduction | safe }}</section>
+        {% endif -%}
+
         {% for s in section.subsections %}
             {% set subsection = get_section(path=s) %}
 
@@ -13,7 +17,11 @@
 
             {% if subsection.extra.show_in_index %}
                 <div class="page-title">Recent {{ subsection.title }}</div>
-                {{ macros::list_posts(pages=subsection.pages, n_pages=n_pages) }}
+                {% if subsection.extra.index_cards %}
+                    {{ macros::cards_posts(pages=subsection.pages, n_pages=n_pages) }}
+                {% else %}
+                    {{ macros::list_posts(pages=subsection.pages, n_pages=n_pages) }}
+                {% endif %}
 
                 <div class="show-all-div">
                     <a href={{ subsection.permalink }} class="show-all-link">More ..</a>

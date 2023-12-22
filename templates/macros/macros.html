@@ -37,10 +37,10 @@
     </div>
 {% endmacro list_posts %}
 
-{% macro cards_posts(pages) %}
+{% macro cards_posts(pages, n_pages) %}
     <div class="padded-content">
         <div class="cards">
-            {%- for page in pages %}
+            {%- for page in pages | slice(end=n_pages) %}
                 <div class="card">
                     {% if page.extra.card_image %}
                         {% if page.extra.card_image is matching("[.](jpg|png)$") %}
