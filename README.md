@@ -39,14 +39,6 @@ goatcounter_host = "goatcounter.com"    # default: goatcounter.com
 
 ```
 
-An introduction displayed on top of the top-level index page:
-```toml
-[extra]
-introduction = """\
-Welcome to my awesome website!
-"""
-```
-
 Add a website favicon:
 
 ```toml

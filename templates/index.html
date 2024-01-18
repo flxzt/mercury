@@ -2,9 +2,9 @@
 
 {% block main_content %}
     <main>
-        {% if config.extra.introduction %}
-            <section class="introduction">{{ config.extra.introduction | safe }}</section>
-        {% endif -%}
+        <div class="padded-content">
+            <section>{{ section.content | safe }}</section>
+        </div>
 
         {% for s in section.subsections %}
             {% set subsection = get_section(path=s) %}
