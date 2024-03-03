@@ -218,10 +218,10 @@ It can be useful to then break the flowing text manually. For this there is the 
 {{ clear() }}
 ```
 
-To help with alignment, any content can be resized to be a specific width with `withwidth(width="<value>")`:
+To help with alignment, any content can be resized to be a specific width with `with_width(width="<value>")`:
 
 ```markdown
-{% withwidth(width="50%") %}
+{% with_width(width="50%") %}
 Content is maximum 50 percent!
 {% end %}
 ```
