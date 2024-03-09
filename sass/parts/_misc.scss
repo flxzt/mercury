@@ -112,6 +112,25 @@ aside {
     clear: both;
 }
 
+.elevator-button {
+    color: var(--primary-color);
+    background-color: var(--accent-bg);
+    width: 2rem;
+    height: 2rem;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    position: fixed;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+
+.elevator-button:hover {
+    cursor:pointer;
+}
+
 @media all and (max-width:719px) {
     aside {
         // force to go full width for mobile

@@ -43,6 +43,19 @@
         {% endif %}
     {% endif %}
 
+    {# Elevator #}
+    {% if config.extra.temml | default(value=false) %}
+        {% if config.extra.use_cdn | default(value=false) %}
+            <script type="text/javascript"
+                src=" https://cdn.jsdelivr.net/npm/elevator.js@1.0.1/elevator.min.js ">
+            </script>
+        {% else %}
+            <script type="text/javascript"
+                src="{{ get_url(path="/node_modules/elevator.js/elevator.min.js") }}">
+            </script>
+        {% endif %}
+    {% endif %}
+
     {# Font from cdn or local #}
     {% if config.extra.use_cdn | default(value=false) %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/roboto@4.5.8/400.css">
@@ -80,10 +93,13 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
 
-
     {% if config.extra.stylesheets %}
         {% for stylesheet in config.extra.stylesheets %}
             <link rel="stylesheet" href="{{ get_url(path=stylesheet) }}">
         {% endfor %}
     {% endif %}
+
+    <script type="text/javascript"
+        src="{{ get_url(path="/js/main.js") }}">
+    </script>
 </head>

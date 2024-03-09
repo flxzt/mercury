@@ -67,6 +67,13 @@ Enable math rendering inline with `$` and blocks with `$$` pairs through [Temml]
 temml = true
 ```
 
+Enable the elevator:
+
+```toml
+[extra]
+elevator = true
+```
+
 Social buttons can be added. The available icon names are the file names without `.svg` in `static/social_icons/`.
 
 ```toml

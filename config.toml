@@ -19,6 +19,7 @@ favicon = "/images/favicon.svg"
 theme = "auto"      # either `auto`, `dark` or `light`
 use_cdn = false
 temml = true
+elevator = true
 
 menu = [
     { name = "/posts", url = "/posts", weight = 1 },
