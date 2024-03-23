@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "elevator.js": "^1.0.1"
+  },
+  "scripts": {
+    "post-update": "npm install --prefix ./static/ --only=production"
+  }
+}
