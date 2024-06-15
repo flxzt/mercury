@@ -142,9 +142,9 @@
                 </div>
 
                 {% if page.extra.tldr %}
-                    <div class="tldr">
-                        <strong class="primary-color">tl;dr:</strong><br>
-                        {{ page.extra.tldr }}
+                    <div class="tldr-div">
+                        <strong class="tldr-prefix">tl;dr:</strong>
+                        {{ page.extra.tldr | markdown(inline=true) | safe }}
                     </div>
                 {% endif %}
 

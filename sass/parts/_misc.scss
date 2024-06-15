@@ -12,6 +12,16 @@
     color: var(--text-1);
 }
 
+.tldr-div {
+    margin: 1.0em 0 0 0;
+}
+
+.tldr-prefix {
+    padding: 2px 4px;
+    border-radius: 4pt;
+    background-color: var(--primary-color);
+}
+
 .draft-label {
     color: var(--text-0);
     text-decoration: none;
@@ -23,6 +33,10 @@
 
 .primary-color {
     color: var(--primary-color);
+}
+
+.primary-color-bg {
+    background-color: var(--primary-color);
 }
 
 .accent-bg {
