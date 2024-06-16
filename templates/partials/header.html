@@ -58,11 +58,13 @@
 
     {# Font from cdn or local #}
     {% if config.extra.use_cdn | default(value=false) %}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/roboto@4.5.8/400.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/merriweather@4.5.14/400.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inconsolata@4.5.9/400.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/roboto/latin.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/merriweather/latin.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inconsolata/latin.css">
     {% else %}
-        <link href={{ get_url(path="fonts.css") }} rel="stylesheet" />
+        <link href={{ get_url(path="/node_modules/@fontsource/roboto/latin.css") }} rel="stylesheet" />
+        <link href={{ get_url(path="/node_modules/@fontsource/merriweather/latin.css") }} rel="stylesheet" />
+        <link href={{ get_url(path="/node_modules/@fontsource/inconsolata/latin.css") }} rel="stylesheet" />
     {% endif %}
 
     {# Analytics #}

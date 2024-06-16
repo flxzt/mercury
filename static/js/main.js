@@ -1,3 +1,7 @@
+// Fonts
+import "/static/@fontsource/merriweather";
+import "/static/@fontsource/merriweather";
+
 // Elevator
 window.addEventListener('scroll', e => {
     const threshold = 300;

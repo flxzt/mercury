@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "@fontsource/roboto": "5.0.13",
+    "@fontsource/merriweather": "^5.0.13",
+    "@fontsource/inconsolata": "^5.0.18",
     "elevator.js": "^1.0.1"
   },
   "scripts": {

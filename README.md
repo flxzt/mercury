@@ -239,6 +239,15 @@ Write a caption with:
 {{ caption(text="This is the caption text") }}
 ```
 
+## Update NPM dependencies
+
+Run the following from the root theme directory:
+
+```bash
+npm install
+npm run post-update
+```
+
 ### License
 
 <sup>
