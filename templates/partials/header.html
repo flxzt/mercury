@@ -1,4 +1,4 @@
-{% import "macros/macros.html" as post_macros %}
+{% import "macros/macros.html" as macros %}
 
 <head>
     <meta charset="UTF-8">
@@ -22,12 +22,49 @@
         <link rel="icon" type="image/png" href={{ config.extra.favicon }} />
     {% endif %}
 
-    {# Font from cdn or disk #}
+    {# Temml #}
+    {% if config.extra.temml | default(value=false) %}
+        {% if config.extra.use_cdn | default(value=false) %}
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/temml@0.10.16/dist/Temml-Local.css">
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/temml@0.10.16/dist/temml.min.js" defer>
+            </script>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/temml@0.10.16/contrib/auto-render/dist/auto-render.min.js" defer>
+            </script>
+        {% else %}
+            <link rel="stylesheet" href="/js/temml/Temml-Local.css">
+            <script type="text/javascript"
+                src="{{ get_url(path="/js/temml/temml.min.js") }}">
+            </script>
+            <script type="text/javascript"
+                src="{{ get_url(path="/js/temml/auto-render.min.js") }}">
+            </script>
+        {% endif %}
+    {% endif %}
+
+    {# Elevator #}
+    {% if config.extra.temml | default(value=false) %}
+        {% if config.extra.use_cdn | default(value=false) %}
+            <script type="text/javascript"
+                src=" https://cdn.jsdelivr.net/npm/elevator.js@1.0.1/elevator.min.js ">
+            </script>
+        {% else %}
+            <script type="text/javascript"
+                src="{{ get_url(path="/node_modules/elevator.js/elevator.min.js") }}">
+            </script>
+        {% endif %}
+    {% endif %}
+
+    {# Font from cdn or local #}
     {% if config.extra.use_cdn | default(value=false) %}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.6/css/jetbrains-mono.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@4.5.8/index.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/roboto/latin.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/merriweather/latin.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inconsolata/latin.css">
     {% else %}
-        <link href={{ get_url(path="fonts.css") }} rel="stylesheet" />
+        <link href={{ get_url(path="/node_modules/@fontsource/roboto/latin.css") }} rel="stylesheet" />
+        <link href={{ get_url(path="/node_modules/@fontsource/merriweather/latin.css") }} rel="stylesheet" />
+        <link href={{ get_url(path="/node_modules/@fontsource/inconsolata/latin.css") }} rel="stylesheet" />
     {% endif %}
 
     {# Analytics #}
@@ -58,10 +95,13 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
 
-
     {% if config.extra.stylesheets %}
         {% for stylesheet in config.extra.stylesheets %}
             <link rel="stylesheet" href="{{ get_url(path=stylesheet) }}">
         {% endfor %}
     {% endif %}
+
+    <script type="text/javascript"
+        src="{{ get_url(path="/js/main.js") }}">
+    </script>
 </head>

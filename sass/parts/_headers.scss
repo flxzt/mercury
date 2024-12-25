@@ -1,0 +1,107 @@
+.item-title {
+    margin-bottom: 0.2em;
+}
+
+.item-title:before {
+    content: "🗎 ";
+    font-size: smaller;
+}
+
+.item-title:hover {
+    color: var(--hover-color);
+}
+
+.item-title:hover:before {
+    color: var(--hover-color);
+}
+
+.page-title {
+    font-family: var(--header-font);
+    font-weight: bold;
+    font-size: 2.0em;
+    line-height: 100%;
+    margin: 0.6em 16px 0.2em 16px;
+}
+
+.link-title {
+    font-family: var(--header-font);
+    font-size: 2.0em;
+    text-align: center;
+    margin: 1.0em 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header-font);
+    color: var(--text-0);
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-top: 1.6em;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-top: 1.5em;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 1.4em;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin-top: 1.3em;
+}
+
+h5 {
+    font-size: 1.0rem;
+    margin-top: 1.3em;
+}
+
+article h1::before {
+    margin-left: -0.5ch;
+    color: var(--text-1);
+    content: "# ";
+}
+
+article h2::before {
+    margin-left: -0.5ch;
+    color: var(--text-1);
+    content: "## ";
+}
+
+article h3::before {
+    margin-left: -0.5ch;
+    color: var(--text-1);
+    content: "### ";
+}
+
+article h4::before {
+    margin-left: -0.5ch;
+    color: var(--text-1);
+    content: "#### ";
+}
+
+article h5::before {
+    margin-left: -0.5ch;
+    color: var(--text-1);
+    content: "##### ";
+}
+
+article h6::before {
+    margin-left: -0.5ch;
+    color: var(--text-1);
+    content: "###### ";
+}
+
+.meta {
+    color: #999;
+    letter-spacing: -0.5px;
+}
