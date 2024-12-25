@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Mercury</title>
+    <subtitle>Modern blog theme</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mercury.flxzt.net/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mercury.flxzt.net/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-01-03T00:00:00+00:00</updated>
+    <id>https://mercury.flxzt.net/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Math</title>
+        <published>2022-01-03T00:00:00+00:00</published>
+        <updated>2022-01-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mercury.flxzt.net/posts/math/"/>
+        <id>https://mercury.flxzt.net/posts/math/</id>
+        
+        <content type="html" xml:base="https://mercury.flxzt.net/posts/math/">&lt;p&gt;Taken from &lt;a href=&quot;https:&#x2F;&#x2F;mathjax.github.io&#x2F;MathJax-demos-web&#x2F;tex-chtml.html&quot;&gt;https:&#x2F;&#x2F;mathjax.github.io&#x2F;MathJax-demos-web&#x2F;tex-chtml.html&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;mathjax-v3-beta-tex-input-html-output-test&quot;&gt;MathJax v3 beta: TeX input, HTML output test&lt;&#x2F;h1&gt;
+&lt;p&gt;When $a \ne 0$, there are two solutions to $ ax^2 + bx + c = 0 $ and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-lorenz-equations&quot;&gt;The Lorenz Equations&lt;&#x2F;h2&gt;
+&lt;p&gt;$$
+\begin{align}
+\dot{x} &amp;amp; = \sigma(y-x) \
+\dot{y} &amp;amp; = \rho x - y - xz \
+\dot{z} &amp;amp; = -\beta z + xy
+\end{align}
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-cauchy-schwarz-inequality&quot;&gt;The Cauchy-Schwarz Inequality&lt;&#x2F;h2&gt;
+&lt;p&gt;$$
+\left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
+\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-cross-product-formula&quot;&gt;A Cross Product Formula&lt;&#x2F;h2&gt;
+&lt;p&gt;$$
+\mathbf{V}_1 \times \mathbf{V}_2 =
+\begin{vmatrix}
+\mathbf{i} &amp;amp; \mathbf{j} &amp;amp; \mathbf{k} \
+\frac{\partial X}{\partial u} &amp;amp; \frac{\partial Y}{\partial u} &amp;amp; 0 \
+\frac{\partial X}{\partial v} &amp;amp; \frac{\partial Y}{\partial v} &amp;amp; 0 \
+\end{vmatrix}
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-probability-of-getting-k-heads-when-flipping-n-coins-is&quot;&gt;The probability of getting (k) heads when flipping (n) coins is:&lt;&#x2F;h2&gt;
+&lt;p&gt;$$
+P(E) = {n \choose k} p^k (1-p)^{ n-k}
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;an-identity-of-ramanujan&quot;&gt;An Identity of Ramanujan&lt;&#x2F;h2&gt;
+&lt;p&gt;$$
+\frac{1}{(\sqrt{\phi \sqrt{5}}-\phi) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } }
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-rogers-ramanujan-identity&quot;&gt;A Rogers-Ramanujan Identity&lt;&#x2F;h2&gt;
+&lt;p&gt;$$
+1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
+\prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})},
+\quad\quad \text{for $|q| &amp;lt; 1$}.
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;maxwell-s-equations&quot;&gt;Maxwell&#x27;s Equations&lt;&#x2F;h2&gt;
+&lt;p&gt;$$
+\begin{align}
+\nabla \times \vec{\mathbf{B}} -, \frac1c, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp;amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \
+\nabla \cdot \vec{\mathbf{E}} &amp;amp; = 4 \pi \rho \
+\nabla \times \vec{\mathbf{E}}, +, \frac1c, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp;amp; = \vec{\mathbf{0}} \
+\nabla \cdot \vec{\mathbf{B}} &amp;amp; = 0
+\end{align}
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;in-line-mathematics&quot;&gt;In-line Mathematics&lt;&#x2F;h2&gt;
+&lt;p&gt;Finally, while display equations look good for a page of samples, the
+ability to mix math and text in a paragraph is also important.  This
+expression $\sqrt{3x-1}+(1+x)^2$ is an example of an inline equation.  As
+you see, MathJax equations can be used this way as well, without unduly
+disturbing the spacing between lines.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Table of Contents Test</title>
+        <published>2022-01-02T00:00:00+00:00</published>
+        <updated>2022-01-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mercury.flxzt.net/posts/table-of-contents/"/>
+        <id>https://mercury.flxzt.net/posts/table-of-contents/</id>
+        
+        <content type="html" xml:base="https://mercury.flxzt.net/posts/table-of-contents/">&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;&#x2F;h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;&#x2F;h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;&#x2F;h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;heading-4-1&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;heading-3-1&quot;&gt;Heading 3&lt;&#x2F;h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;heading-4-2&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;heading-4-3&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;heading-2-1&quot;&gt;Heading 2&lt;&#x2F;h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;heading-3-2&quot;&gt;Heading 3&lt;&#x2F;h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;heading-4-4&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;heading-4-5&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;heading-3-3&quot;&gt;Heading 3&lt;&#x2F;h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;heading-4-6&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;heading-4-7&quot;&gt;Heading 4&lt;&#x2F;h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed mollis augue, vel efficitur lacus. Pellentesque eu egestas mi. Etiam ultrices lectus sit amet aliquet ullamcorper. Praesent in erat quis est sagittis finibus. Etiam nec sapien in nulla interdum faucibus. Integer iaculis lorem quis arcu lobortis, non malesuada neque vehicula. Aenean nec tellus eu metus bibendum tempus. Sed rutrum urna ut commodo tempor. Vestibulum aliquet elit posuere turpis maximus condimentum. Sed urna libero, ornare eu tellus vitae, laoreet condimentum risus. Aenean elit lectus, mattis quis nibh nec, faucibus rutrum sapien. Sed iaculis consectetur mi, eget posuere turpis finibus et.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Markdown Syntax</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-01-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mercury.flxzt.net/posts/markdown/"/>
+        <id>https://mercury.flxzt.net/posts/markdown/</id>
+        
+        <content type="html" xml:base="https://mercury.flxzt.net/posts/markdown/">&lt;p&gt;Taken from &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;thephpleague&#x2F;commonmark&#x2F;blob&#x2F;2.3&#x2F;tests&#x2F;benchmark&#x2F;sample.md&quot;&gt;github.com&#x2F;thephpleague&#x2F;commonmark&#x2F;blob&#x2F;2.3&#x2F;tests&#x2F;benchmark&#x2F;sample.md&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;philosophy&quot;&gt;Philosophy&lt;&#x2F;h3&gt;
+&lt;p&gt;Markdown is intended to be as easy-to-read and easy-to-write as is feasible.&lt;&#x2F;p&gt;
+&lt;p&gt;Readability, however, is emphasized above all else. A Markdown-formatted
+document should be publishable as-is, as plain text, without looking
+like it&#x27;s been marked up with tags or formatting instructions. While
+Markdown&#x27;s syntax has been influenced by several existing text-to-HTML
+filters -- including [Setext] &lt;a href=&quot;http:&#x2F;&#x2F;docutils.sourceforge.net&#x2F;mirror&#x2F;setext.html&quot;&gt;1&lt;&#x2F;a&gt;, [atx] &lt;a href=&quot;http:&#x2F;&#x2F;www.aaronsw.com&#x2F;2002&#x2F;atx&#x2F;&quot;&gt;2&lt;&#x2F;a&gt;, [Textile] &lt;a href=&quot;http:&#x2F;&#x2F;textism.com&#x2F;tools&#x2F;textile&#x2F;&quot;&gt;3&lt;&#x2F;a&gt;, [reStructuredText] &lt;a href=&quot;http:&#x2F;&#x2F;docutils.sourceforge.net&#x2F;rst.html&quot;&gt;4&lt;&#x2F;a&gt;,
+[Grutatext] &lt;a href=&quot;http:&#x2F;&#x2F;www.triptico.com&#x2F;software&#x2F;grutatxt.html&quot;&gt;5&lt;&#x2F;a&gt;, and [EtText] &lt;a href=&quot;http:&#x2F;&#x2F;ettext.taint.org&#x2F;doc&#x2F;&quot;&gt;6&lt;&#x2F;a&gt; -- the single biggest source of
+inspiration for Markdown&#x27;s syntax is the format of plain text email.&lt;&#x2F;p&gt;
+&lt;p&gt;To this end, Markdown&#x27;s syntax is comprised entirely of punctuation
+characters, which punctuation characters have been carefully chosen so
+as to look like what they mean. E.g., asterisks around a word actually
+look like *emphasis*. Markdown lists look like, well, lists. Even
+blockquotes look like quoted passages of text, assuming you&#x27;ve ever
+used email.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;html&quot;&gt;Inline HTML&lt;&#x2F;h3&gt;
+&lt;p&gt;Markdown&#x27;s syntax is intended for one purpose: to be used as a
+format for &lt;em&gt;writing&lt;&#x2F;em&gt; for the web.&lt;&#x2F;p&gt;
+&lt;p&gt;Markdown is not a replacement for HTML, or even close to it. Its
+syntax is very small, corresponding only to a very small subset of
+HTML tags. The idea is &lt;em&gt;not&lt;&#x2F;em&gt; to create a syntax that makes it easier
+to insert HTML tags. In my opinion, HTML tags are already easy to
+insert. The idea for Markdown is to make it easy to read, write, and
+edit prose. HTML is a &lt;em&gt;publishing&lt;&#x2F;em&gt; format; Markdown is a &lt;em&gt;writing&lt;&#x2F;em&gt;
+format. Thus, Markdown&#x27;s formatting syntax only addresses issues that
+can be conveyed in plain text.&lt;&#x2F;p&gt;
+&lt;p&gt;For any markup that is not covered by Markdown&#x27;s syntax, you simply
+use HTML itself. There&#x27;s no need to preface it or delimit it to
+indicate that you&#x27;re switching from Markdown to HTML; you just use
+the tags.&lt;&#x2F;p&gt;
+&lt;p&gt;The only restrictions are that block-level HTML elements -- e.g. &lt;code&gt;&amp;lt;div&amp;gt;&lt;&#x2F;code&gt;,
+&lt;code&gt;&amp;lt;table&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;lt;pre&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;lt;p&amp;gt;&lt;&#x2F;code&gt;, etc. -- must be separated from surrounding
+content by blank lines, and the start and end tags of the block should
+not be indented with tabs or spaces. Markdown is smart enough not
+to add extra (unwanted) &lt;code&gt;&amp;lt;p&amp;gt;&lt;&#x2F;code&gt; tags around HTML block-level tags.&lt;&#x2F;p&gt;
+&lt;p&gt;For example, to add an HTML table to a Markdown article:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;This is a regular paragraph.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;table&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;lt;tr&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        &amp;lt;td&amp;gt;Foo&amp;lt;&#x2F;td&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;lt;&#x2F;tr&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;table&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;This is another regular paragraph.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Note that Markdown formatting syntax is not processed within block-level
+HTML tags. E.g., you can&#x27;t use Markdown-style &lt;code&gt;*emphasis*&lt;&#x2F;code&gt; inside an
+HTML block.&lt;&#x2F;p&gt;
+&lt;p&gt;Span-level HTML tags -- e.g. &lt;code&gt;&amp;lt;span&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;lt;cite&amp;gt;&lt;&#x2F;code&gt;, or &lt;code&gt;&amp;lt;del&amp;gt;&lt;&#x2F;code&gt; -- can be
+used anywhere in a Markdown paragraph, list item, or header. If you
+want, you can even use HTML tags instead of Markdown formatting; e.g. if
+you&#x27;d prefer to use HTML &lt;code&gt;&amp;lt;a&amp;gt;&lt;&#x2F;code&gt; or &lt;code&gt;&amp;lt;img&amp;gt;&lt;&#x2F;code&gt; tags instead of Markdown&#x27;s
+link or image syntax, go right ahead.&lt;&#x2F;p&gt;
+&lt;p&gt;Unlike block-level HTML tags, Markdown syntax &lt;em&gt;is&lt;&#x2F;em&gt; processed within
+span-level tags.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;autoescape&quot;&gt;Automatic Escaping for Special Characters&lt;&#x2F;h3&gt;
+&lt;p&gt;In HTML, there are two characters that demand special treatment: &lt;code&gt;&amp;lt;&lt;&#x2F;code&gt;
+and &lt;code&gt;&amp;amp;&lt;&#x2F;code&gt;. Left angle brackets are used to start tags; ampersands are
+used to denote HTML entities. If you want to use them as literal
+characters, you must escape them as entities, e.g. &lt;code&gt;&amp;amp;lt;&lt;&#x2F;code&gt;, and
+&lt;code&gt;&amp;amp;amp;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Ampersands in particular are bedeviling for web writers. If you want to
+write about &#x27;AT&amp;amp;T&#x27;, you need to write &#x27;&lt;code&gt;AT&amp;amp;amp;T&lt;&#x2F;code&gt;&#x27;. You even need to
+escape ampersands within URLs. Thus, if you want to link to:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;http:&#x2F;&#x2F;images.google.com&#x2F;images?num=30&amp;amp;q=larry+bird
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;you need to encode the URL as:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;http:&#x2F;&#x2F;images.google.com&#x2F;images?num=30&amp;amp;amp;q=larry+bird
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;in your anchor tag &lt;code&gt;href&lt;&#x2F;code&gt; attribute. Needless to say, this is easy to
+forget, and is probably the single most common source of HTML validation
+errors in otherwise well-marked-up web sites.&lt;&#x2F;p&gt;
+&lt;p&gt;Markdown allows you to use these characters naturally, taking care of
+all the necessary escaping for you. If you use an ampersand as part of
+an HTML entity, it remains unchanged; otherwise it will be translated
+into &lt;code&gt;&amp;amp;amp;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;So, if you want to include a copyright symbol in your article, you can write:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;amp;copy;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;and Markdown will leave it alone. But if you write:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;AT&amp;amp;T
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Markdown will translate it to:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;AT&amp;amp;amp;T
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Similarly, because Markdown supports &lt;a href=&quot;https:&#x2F;&#x2F;mercury.flxzt.net&#x2F;posts&#x2F;markdown&#x2F;#html&quot;&gt;inline HTML&lt;&#x2F;a&gt;, if you use
+angle brackets as delimiters for HTML tags, Markdown will treat them as
+such. But if you write:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;4 &amp;lt; 5
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Markdown will translate it to:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;4 &amp;amp;lt; 5
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;However, inside Markdown code spans and blocks, angle brackets and
+ampersands are &lt;em&gt;always&lt;&#x2F;em&gt; encoded automatically. This makes it easy to use
+Markdown to write about HTML code. (As opposed to raw HTML, which is a
+terrible format for writing about HTML syntax, because every single &lt;code&gt;&amp;lt;&lt;&#x2F;code&gt;
+and &lt;code&gt;&amp;amp;&lt;&#x2F;code&gt; in your example code needs to be escaped.)&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;block&quot;&gt;Block Elements&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;p&quot;&gt;Paragraphs and Line Breaks&lt;&#x2F;h3&gt;
+&lt;p&gt;A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like a
+blank line -- a line containing nothing but spaces or tabs is considered
+blank.) Normal paragraphs should not be indented with spaces or tabs.&lt;&#x2F;p&gt;
+&lt;p&gt;The implication of the &quot;one or more consecutive lines of text&quot; rule is
+that Markdown supports &quot;hard-wrapped&quot; text paragraphs. This differs
+significantly from most other text-to-HTML formatters (including Movable
+Type&#x27;s &quot;Convert Line Breaks&quot; option) which translate every line break
+character in a paragraph into a &lt;code&gt;&amp;lt;br &#x2F;&amp;gt;&lt;&#x2F;code&gt; tag.&lt;&#x2F;p&gt;
+&lt;p&gt;When you &lt;em&gt;do&lt;&#x2F;em&gt; want to insert a &lt;code&gt;&amp;lt;br &#x2F;&amp;gt;&lt;&#x2F;code&gt; break tag using Markdown, you
+end a line with two or more spaces, then type return.&lt;&#x2F;p&gt;
+&lt;p&gt;Yes, this takes a tad more effort to create a &lt;code&gt;&amp;lt;br &#x2F;&amp;gt;&lt;&#x2F;code&gt;, but a simplistic
+&quot;every line break is a &lt;code&gt;&amp;lt;br &#x2F;&amp;gt;&lt;&#x2F;code&gt;&quot; rule wouldn&#x27;t work for Markdown.
+Markdown&#x27;s email-style &lt;a href=&quot;https:&#x2F;&#x2F;mercury.flxzt.net&#x2F;posts&#x2F;markdown&#x2F;#blockquote&quot;&gt;blockquoting&lt;&#x2F;a&gt; and multi-paragraph &lt;a href=&quot;https:&#x2F;&#x2F;mercury.flxzt.net&#x2F;posts&#x2F;markdown&#x2F;#list&quot;&gt;list items&lt;&#x2F;a&gt;
+work best -- and look better -- when you format them with hard breaks.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;header&quot;&gt;Headers&lt;&#x2F;h3&gt;
+&lt;p&gt;Markdown supports two styles of headers, [Setext] &lt;a href=&quot;http:&#x2F;&#x2F;docutils.sourceforge.net&#x2F;mirror&#x2F;setext.html&quot;&gt;1&lt;&#x2F;a&gt; and [atx] &lt;a href=&quot;http:&#x2F;&#x2F;www.aaronsw.com&#x2F;2002&#x2F;atx&#x2F;&quot;&gt;2&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Setext-style headers are &quot;underlined&quot; using equal signs (for first-level
+headers) and dashes (for second-level headers). For example:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;This is an H1
+&lt;&#x2F;span&gt;&lt;span&gt;=============
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;This is an H2
+&lt;&#x2F;span&gt;&lt;span&gt;-------------
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Any number of underlining &lt;code&gt;=&lt;&#x2F;code&gt;&#x27;s or &lt;code&gt;-&lt;&#x2F;code&gt;&#x27;s will work.&lt;&#x2F;p&gt;
+&lt;p&gt;Atx-style headers use 1-6 hash characters at the start of the line,
+corresponding to header levels 1-6. For example:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;# This is an H1
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;## This is an H2
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;###### This is an H6
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Optionally, you may &quot;close&quot; atx-style headers. This is purely
+cosmetic -- you can use this if you think it looks better. The
+closing hashes don&#x27;t even need to match the number of hashes
+used to open the header. (The number of opening hashes
+determines the header level.) :&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;# This is an H1 #
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;## This is an H2 ##
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;### This is an H3 ######
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;blockquote&quot;&gt;Blockquotes&lt;&#x2F;h3&gt;
+&lt;p&gt;Markdown uses email-style &lt;code&gt;&amp;gt;&lt;&#x2F;code&gt; characters for blockquoting. If you&#x27;re
+familiar with quoting passages of text in an email message, then you
+know how to create a blockquote in Markdown. It looks best if you hard
+wrap the text and put a &lt;code&gt;&amp;gt;&lt;&#x2F;code&gt; before every line:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; 
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; id sem consectetuer libero luctus adipiscing.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Markdown allows you to be lazy and only put the &lt;code&gt;&amp;gt;&lt;&#x2F;code&gt; before the first
+line of a hard-wrapped paragraph:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+&lt;&#x2F;span&gt;&lt;span&gt;consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+&lt;&#x2F;span&gt;&lt;span&gt;Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+&lt;&#x2F;span&gt;&lt;span&gt;id sem consectetuer libero luctus adipiscing.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
+adding additional levels of &lt;code&gt;&amp;gt;&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;gt; This is the first level of quoting.
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; &amp;gt; This is nested blockquote.
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; Back to the first level.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Blockquotes can contain other Markdown elements, including headers, lists,
+and code blocks:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;this-is-a-header&quot;&gt;This is a header.&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;This is the first list item.&lt;&#x2F;li&gt;
+&lt;li&gt;This is the second list item.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Here&#x27;s some example code:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt; return shell_exec(&amp;quot;echo $input | $markdown_script&amp;quot;);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Any decent text editor should make email-style quoting easy. For
+example, with BBEdit, you can make a selection and choose Increase
+Quote Level from the Text menu.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;list&quot;&gt;Lists&lt;&#x2F;h3&gt;
+&lt;p&gt;Markdown supports ordered (numbered) and unordered (bulleted) lists.&lt;&#x2F;p&gt;
+&lt;p&gt;Unordered lists use asterisks, pluses, and hyphens -- interchangably
+-- as list markers:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;*   Red
+&lt;&#x2F;span&gt;&lt;span&gt;*   Green
+&lt;&#x2F;span&gt;&lt;span&gt;*   Blue
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;is equivalent to:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;+   Red
+&lt;&#x2F;span&gt;&lt;span&gt;+   Green
+&lt;&#x2F;span&gt;&lt;span&gt;+   Blue
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;and:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;-   Red
+&lt;&#x2F;span&gt;&lt;span&gt;-   Green
+&lt;&#x2F;span&gt;&lt;span&gt;-   Blue
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Ordered lists use numbers followed by periods:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;1.  Bird
+&lt;&#x2F;span&gt;&lt;span&gt;2.  McHale
+&lt;&#x2F;span&gt;&lt;span&gt;3.  Parish
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;It&#x27;s important to note that the actual numbers you use to mark the
+list have no effect on the HTML output Markdown produces. The HTML
+Markdown produces from the above list is:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;ol&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;li&amp;gt;Bird&amp;lt;&#x2F;li&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;li&amp;gt;McHale&amp;lt;&#x2F;li&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;li&amp;gt;Parish&amp;lt;&#x2F;li&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;ol&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If you instead wrote the list in Markdown like this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;1.  Bird
+&lt;&#x2F;span&gt;&lt;span&gt;1.  McHale
+&lt;&#x2F;span&gt;&lt;span&gt;1.  Parish
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;or even:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;3. Bird
+&lt;&#x2F;span&gt;&lt;span&gt;1. McHale
+&lt;&#x2F;span&gt;&lt;span&gt;8. Parish
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;you&#x27;d get the exact same HTML output. The point is, if you want to,
+you can use ordinal numbers in your ordered Markdown lists, so that
+the numbers in your source match the numbers in your published HTML.
+But if you want to be lazy, you don&#x27;t have to.&lt;&#x2F;p&gt;
+&lt;p&gt;If you do use lazy list numbering, however, you should still start the
+list with the number 1. At some point in the future, Markdown may support
+starting ordered lists at an arbitrary number.&lt;&#x2F;p&gt;
+&lt;p&gt;List markers typically start at the left margin, but may be indented by
+up to three spaces. List markers must be followed by one or more spaces
+or a tab.&lt;&#x2F;p&gt;
+&lt;p&gt;To make lists look nice, you can wrap items with hanging indents:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+&lt;&#x2F;span&gt;&lt;span&gt;    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+&lt;&#x2F;span&gt;&lt;span&gt;    viverra nec, fringilla in, laoreet vitae, risus.
+&lt;&#x2F;span&gt;&lt;span&gt;*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+&lt;&#x2F;span&gt;&lt;span&gt;    Suspendisse id sem consectetuer libero luctus adipiscing.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;But if you want to be lazy, you don&#x27;t have to:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+&lt;&#x2F;span&gt;&lt;span&gt;Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+&lt;&#x2F;span&gt;&lt;span&gt;viverra nec, fringilla in, laoreet vitae, risus.
+&lt;&#x2F;span&gt;&lt;span&gt;*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+&lt;&#x2F;span&gt;&lt;span&gt;Suspendisse id sem consectetuer libero luctus adipiscing.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If list items are separated by blank lines, Markdown will wrap the
+items in &lt;code&gt;&amp;lt;p&amp;gt;&lt;&#x2F;code&gt; tags in the HTML output. For example, this input:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;*   Bird
+&lt;&#x2F;span&gt;&lt;span&gt;*   Magic
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;will turn into:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;ul&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;li&amp;gt;Bird&amp;lt;&#x2F;li&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;li&amp;gt;Magic&amp;lt;&#x2F;li&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;ul&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;But this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;*   Bird
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;*   Magic
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;will turn into:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;ul&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Bird&amp;lt;&#x2F;p&amp;gt;&amp;lt;&#x2F;li&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Magic&amp;lt;&#x2F;p&amp;gt;&amp;lt;&#x2F;li&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;ul&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;List items may consist of multiple paragraphs. Each subsequent
+paragraph in a list item must be indented by either 4 spaces
+or one tab:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;1.  This is a list item with two paragraphs. Lorem ipsum dolor
+&lt;&#x2F;span&gt;&lt;span&gt;    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+&lt;&#x2F;span&gt;&lt;span&gt;    mi posuere lectus.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+&lt;&#x2F;span&gt;&lt;span&gt;    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+&lt;&#x2F;span&gt;&lt;span&gt;    sit amet velit.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;It looks nice if you indent every line of the subsequent
+paragraphs, but here again, Markdown will allow you to be
+lazy:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;*   This is a list item with two paragraphs.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    This is the second paragraph in the list item. You&amp;#39;re
+&lt;&#x2F;span&gt;&lt;span&gt;only required to indent the first line. Lorem ipsum dolor
+&lt;&#x2F;span&gt;&lt;span&gt;sit amet, consectetuer adipiscing elit.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;*   Another item in the same list.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To put a blockquote within a list item, the blockquote&#x27;s &lt;code&gt;&amp;gt;&lt;&#x2F;code&gt;
+delimiters need to be indented:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;*   A list item with a blockquote:
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;gt; This is a blockquote
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;gt; inside a list item.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To put a code block within a list item, the code block needs
+to be indented &lt;em&gt;twice&lt;&#x2F;em&gt; -- 8 spaces or two tabs:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;*   A list item with a code block:
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        &amp;lt;code goes here&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;It&#x27;s worth noting that it&#x27;s possible to trigger an ordered list by
+accident, by writing something like this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;1986. What a great season.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;In other words, a &lt;em&gt;number-period-space&lt;&#x2F;em&gt; sequence at the beginning of a
+line. To avoid this, you can backslash-escape the period:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;1986\. What a great season.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;precode&quot;&gt;Code Blocks&lt;&#x2F;h3&gt;
+&lt;p&gt;Pre-formatted code blocks are used for writing about programming or
+markup source code. Rather than forming normal paragraphs, the lines
+of a code block are interpreted literally. Markdown wraps a code block
+in both &lt;code&gt;&amp;lt;pre&amp;gt;&lt;&#x2F;code&gt; and &lt;code&gt;&amp;lt;code&amp;gt;&lt;&#x2F;code&gt; tags.&lt;&#x2F;p&gt;
+&lt;p&gt;To produce a code block in Markdown, simply indent every line of the
+block by at least 4 spaces or 1 tab. For example, given this input:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;This is a normal paragraph:
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    This is a code block.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Markdown will generate:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;p&amp;gt;This is a normal paragraph:&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;This is a code block.
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;code&amp;gt;&amp;lt;&#x2F;pre&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;One level of indentation -- 4 spaces or 1 tab -- is removed from each
+line of the code block. For example, this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;Here is an example of AppleScript:
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    tell application &amp;quot;Foo&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;        beep
+&lt;&#x2F;span&gt;&lt;span&gt;    end tell
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;will turn into:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;p&amp;gt;Here is an example of AppleScript:&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;tell application &amp;quot;Foo&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    beep
+&lt;&#x2F;span&gt;&lt;span&gt;end tell
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;code&amp;gt;&amp;lt;&#x2F;pre&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;A code block continues until it reaches a line that is not indented
+(or the end of the article).&lt;&#x2F;p&gt;
+&lt;p&gt;Within a code block, ampersands (&lt;code&gt;&amp;amp;&lt;&#x2F;code&gt;) and angle brackets (&lt;code&gt;&amp;lt;&lt;&#x2F;code&gt; and &lt;code&gt;&amp;gt;&lt;&#x2F;code&gt;)
+are automatically converted into HTML entities. This makes it very
+easy to include example HTML source code using Markdown -- just paste
+it and indent it, and Markdown will handle the hassle of encoding the
+ampersands and angle brackets. For example, this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;    &amp;lt;div class=&amp;quot;footer&amp;quot;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        &amp;amp;copy; 2004 Foo Corporation
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;lt;&#x2F;div&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;will turn into:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&amp;amp;lt;div class=&amp;quot;footer&amp;quot;&amp;amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;amp;amp;copy; 2004 Foo Corporation
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;amp;lt;&#x2F;div&amp;amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;code&amp;gt;&amp;lt;&#x2F;pre&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Regular Markdown syntax is not processed within code blocks. E.g.,
+asterisks are just literal asterisks within a code block. This means
+it&#x27;s also easy to use Markdown to write about Markdown&#x27;s own syntax.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;hr&quot;&gt;Horizontal Rules&lt;&#x2F;h3&gt;
+&lt;p&gt;You can produce a horizontal rule tag (&lt;code&gt;&amp;lt;hr &#x2F;&amp;gt;&lt;&#x2F;code&gt;) by placing three or
+more hyphens, asterisks, or underscores on a line by themselves. If you
+wish, you may use spaces between the hyphens or asterisks. Each of the
+following lines will produce a horizontal rule:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;* * *
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;***
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;*****
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;- - -
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;---------------------------------------
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;span&quot;&gt;Span Elements&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;link&quot;&gt;Links&lt;&#x2F;h3&gt;
+&lt;p&gt;Markdown supports two style of links: &lt;em&gt;inline&lt;&#x2F;em&gt; and &lt;em&gt;reference&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;In both styles, the link text is delimited by [square brackets].&lt;&#x2F;p&gt;
+&lt;p&gt;To create an inline link, use a set of regular parentheses immediately
+after the link text&#x27;s closing square bracket. Inside the parentheses,
+put the URL where you want the link to point, along with an &lt;em&gt;optional&lt;&#x2F;em&gt;
+title for the link, surrounded in quotes. For example:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;This is [an example](http:&#x2F;&#x2F;example.com&#x2F; &amp;quot;Title&amp;quot;) inline link.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[This link](http:&#x2F;&#x2F;example.net&#x2F;) has no title attribute.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Will produce:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;p&amp;gt;This is &amp;lt;a href=&amp;quot;http:&#x2F;&#x2F;example.com&#x2F;&amp;quot; title=&amp;quot;Title&amp;quot;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;an example&amp;lt;&#x2F;a&amp;gt; inline link.&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http:&#x2F;&#x2F;example.net&#x2F;&amp;quot;&amp;gt;This link&amp;lt;&#x2F;a&amp;gt; has no
+&lt;&#x2F;span&gt;&lt;span&gt;title attribute.&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If you&#x27;re referring to a local resource on the same server, you can
+use relative paths:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;See my [About](&#x2F;about&#x2F;) page for details.   
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Reference-style links use a second set of square brackets, inside
+which you place a label of your choosing to identify the link:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;This is [an example][id] reference-style link.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can optionally use a space to separate the sets of brackets:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;This is [an example] [id] reference-style link.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then, anywhere in the document, you define your link label like this,
+on a line by itself:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;[id]: http:&#x2F;&#x2F;example.com&#x2F;  &amp;quot;Optional Title Here&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;That is:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Square brackets containing the link identifier (optionally
+indented from the left margin using up to three spaces);&lt;&#x2F;li&gt;
+&lt;li&gt;followed by a colon;&lt;&#x2F;li&gt;
+&lt;li&gt;followed by one or more spaces (or tabs);&lt;&#x2F;li&gt;
+&lt;li&gt;followed by the URL for the link;&lt;&#x2F;li&gt;
+&lt;li&gt;optionally followed by a title attribute for the link, enclosed
+in double or single quotes, or enclosed in parentheses.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The following three link definitions are equivalent:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;[foo]: http:&#x2F;&#x2F;example.com&#x2F;  &amp;quot;Optional Title Here&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;[foo]: http:&#x2F;&#x2F;example.com&#x2F;  &amp;#39;Optional Title Here&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;[foo]: http:&#x2F;&#x2F;example.com&#x2F;  (Optional Title Here)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;&#x2F;strong&gt; There is a known bug in Markdown.pl 1.0.1 which prevents
+single quotes from being used to delimit link titles.&lt;&#x2F;p&gt;
+&lt;p&gt;The link URL may, optionally, be surrounded by angle brackets:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;[id]: &amp;lt;http:&#x2F;&#x2F;example.com&#x2F;&amp;gt;  &amp;quot;Optional Title Here&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can put the title attribute on the next line and use extra spaces
+or tabs for padding, which tends to look better with longer URLs:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;[id]: http:&#x2F;&#x2F;example.com&#x2F;longish&#x2F;path&#x2F;to&#x2F;resource&#x2F;here
+&lt;&#x2F;span&gt;&lt;span&gt;    &amp;quot;Optional Title Here&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Link definitions are only used for creating links during Markdown
+processing, and are stripped from your document in the HTML output.&lt;&#x2F;p&gt;
+&lt;p&gt;Link definition names may consist of letters, numbers, spaces, and
+punctuation -- but they are &lt;em&gt;not&lt;&#x2F;em&gt; case sensitive. E.g. these two
+links:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;[link text][a]
+&lt;&#x2F;span&gt;&lt;span&gt;[link text][A]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;are equivalent.&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;em&gt;implicit link name&lt;&#x2F;em&gt; shortcut allows you to omit the name of the
+link, in which case the link text itself is used as the name.
+Just use an empty set of square brackets -- e.g., to link the word
+&quot;Google&quot; to the google.com web site, you could simply write:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;[Google][]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;And then define the link:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;[Google]: http:&#x2F;&#x2F;google.com&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Because link names may contain spaces, this shortcut even works for
+multiple words in the link text:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;Visit [Daring Fireball][] for more information.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;And then define the link:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;[Daring Fireball]: http:&#x2F;&#x2F;daringfireball.net&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Link definitions can be placed anywhere in your Markdown document. I
+tend to put them immediately after each paragraph in which they&#x27;re
+used, but if you want, you can put them all at the end of your
+document, sort of like footnotes.&lt;&#x2F;p&gt;
+&lt;p&gt;Here&#x27;s an example of reference links in action:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;I get 10 times more traffic from [Google] [1] than from
+&lt;&#x2F;span&gt;&lt;span&gt;[Yahoo] [2] or [MSN] [3].
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  [1]: http:&#x2F;&#x2F;google.com&#x2F;        &amp;quot;Google&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;  [2]: http:&#x2F;&#x2F;search.yahoo.com&#x2F;  &amp;quot;Yahoo Search&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;  [3]: http:&#x2F;&#x2F;search.msn.com&#x2F;    &amp;quot;MSN Search&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Using the implicit link name shortcut, you could instead write:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;I get 10 times more traffic from [Google][] than from
+&lt;&#x2F;span&gt;&lt;span&gt;[Yahoo][] or [MSN][].
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  [google]: http:&#x2F;&#x2F;google.com&#x2F;        &amp;quot;Google&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;  [yahoo]:  http:&#x2F;&#x2F;search.yahoo.com&#x2F;  &amp;quot;Yahoo Search&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;  [msn]:    http:&#x2F;&#x2F;search.msn.com&#x2F;    &amp;quot;MSN Search&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Both of the above examples will produce the following HTML output:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;p&amp;gt;I get 10 times more traffic from &amp;lt;a href=&amp;quot;http:&#x2F;&#x2F;google.com&#x2F;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;title=&amp;quot;Google&amp;quot;&amp;gt;Google&amp;lt;&#x2F;a&amp;gt; than from
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;a href=&amp;quot;http:&#x2F;&#x2F;search.yahoo.com&#x2F;&amp;quot; title=&amp;quot;Yahoo Search&amp;quot;&amp;gt;Yahoo&amp;lt;&#x2F;a&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;or &amp;lt;a href=&amp;quot;http:&#x2F;&#x2F;search.msn.com&#x2F;&amp;quot; title=&amp;quot;MSN Search&amp;quot;&amp;gt;MSN&amp;lt;&#x2F;a&amp;gt;.&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;For comparison, here is the same paragraph written using
+Markdown&#x27;s inline link style:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;I get 10 times more traffic from [Google](http:&#x2F;&#x2F;google.com&#x2F; &amp;quot;Google&amp;quot;)
+&lt;&#x2F;span&gt;&lt;span&gt;than from [Yahoo](http:&#x2F;&#x2F;search.yahoo.com&#x2F; &amp;quot;Yahoo Search&amp;quot;) or
+&lt;&#x2F;span&gt;&lt;span&gt;[MSN](http:&#x2F;&#x2F;search.msn.com&#x2F; &amp;quot;MSN Search&amp;quot;).
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The point of reference-style links is not that they&#x27;re easier to
+write. The point is that with reference-style links, your document
+source is vastly more readable. Compare the above examples: using
+reference-style links, the paragraph itself is only 81 characters
+long; with inline-style links, it&#x27;s 176 characters; and as raw HTML,
+it&#x27;s 234 characters. In the raw HTML, there&#x27;s more markup than there
+is text.&lt;&#x2F;p&gt;
+&lt;p&gt;With Markdown&#x27;s reference-style links, a source document much more
+closely resembles the final output, as rendered in a browser. By
+allowing you to move the markup-related metadata out of the paragraph,
+you can add links without interrupting the narrative flow of your
+prose.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;em&quot;&gt;Emphasis&lt;&#x2F;h3&gt;
+&lt;p&gt;Markdown treats asterisks (&lt;code&gt;*&lt;&#x2F;code&gt;) and underscores (&lt;code&gt;_&lt;&#x2F;code&gt;) as indicators of
+emphasis. Text wrapped with one &lt;code&gt;*&lt;&#x2F;code&gt; or &lt;code&gt;_&lt;&#x2F;code&gt; will be wrapped with an
+HTML &lt;code&gt;&amp;lt;em&amp;gt;&lt;&#x2F;code&gt; tag; double &lt;code&gt;*&lt;&#x2F;code&gt;&#x27;s or &lt;code&gt;_&lt;&#x2F;code&gt;&#x27;s will be wrapped with an HTML
+&lt;code&gt;&amp;lt;strong&amp;gt;&lt;&#x2F;code&gt; tag. E.g., this input:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;*single asterisks*
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;_single underscores_
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;**double asterisks**
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;__double underscores__
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;will produce:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;em&amp;gt;single asterisks&amp;lt;&#x2F;em&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;em&amp;gt;single underscores&amp;lt;&#x2F;em&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;strong&amp;gt;double asterisks&amp;lt;&#x2F;strong&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;strong&amp;gt;double underscores&amp;lt;&#x2F;strong&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can use whichever style you prefer; the lone restriction is that
+the same character must be used to open and close an emphasis span.&lt;&#x2F;p&gt;
+&lt;p&gt;Emphasis can be used in the middle of a word:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;un*frigging*believable
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;But if you surround an &lt;code&gt;*&lt;&#x2F;code&gt; or &lt;code&gt;_&lt;&#x2F;code&gt; with spaces, it&#x27;ll be treated as a
+literal asterisk or underscore.&lt;&#x2F;p&gt;
+&lt;p&gt;To produce a literal asterisk or underscore at a position where it
+would otherwise be used as an emphasis delimiter, you can backslash
+escape it:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;\*this text is surrounded by literal asterisks\*
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;code&quot;&gt;Code&lt;&#x2F;h3&gt;
+&lt;p&gt;To indicate a span of code, wrap it with backtick quotes (&lt;code&gt;`&lt;&#x2F;code&gt;).
+Unlike a pre-formatted code block, a code span indicates code within a
+normal paragraph. For example:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;Use the `printf()` function.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;will produce:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;p&amp;gt;Use the &amp;lt;code&amp;gt;printf()&amp;lt;&#x2F;code&amp;gt; function.&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To include a literal backtick character within a code span, you can use
+multiple backticks as the opening and closing delimiters:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;``There is a literal backtick (`) here.``
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;which will produce this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;There is a literal backtick (`) here.&amp;lt;&#x2F;code&amp;gt;&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The backtick delimiters surrounding a code span may include spaces --
+one after the opening, one before the closing. This allows you to place
+literal backtick characters at the beginning or end of a code span:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;A single backtick in a code span: `` ` ``
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;A backtick-delimited string in a code span: `` `foo` ``
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;will produce:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;p&amp;gt;A single backtick in a code span: &amp;lt;code&amp;gt;`&amp;lt;&#x2F;code&amp;gt;&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;p&amp;gt;A backtick-delimited string in a code span: &amp;lt;code&amp;gt;`foo`&amp;lt;&#x2F;code&amp;gt;&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;With a code span, ampersands and angle brackets are encoded as HTML
+entities automatically, which makes it easy to include example HTML
+tags. Markdown will turn this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;Please don&amp;#39;t use any `&amp;lt;blink&amp;gt;` tags.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;into:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;p&amp;gt;Please don&amp;#39;t use any &amp;lt;code&amp;gt;&amp;amp;lt;blink&amp;amp;gt;&amp;lt;&#x2F;code&amp;gt; tags.&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can write this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;`&amp;amp;#8212;` is the decimal-encoded equivalent of `&amp;amp;mdash;`.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;to produce:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;&amp;amp;amp;#8212;&amp;lt;&#x2F;code&amp;gt; is the decimal-encoded
+&lt;&#x2F;span&gt;&lt;span&gt;equivalent of &amp;lt;code&amp;gt;&amp;amp;amp;mdash;&amp;lt;&#x2F;code&amp;gt;.&amp;lt;&#x2F;p&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;img&quot;&gt;Images&lt;&#x2F;h3&gt;
+&lt;p&gt;Admittedly, it&#x27;s fairly difficult to devise a &quot;natural&quot; syntax for
+placing images into a plain text document format.&lt;&#x2F;p&gt;
+&lt;p&gt;Markdown uses an image syntax that is intended to resemble the syntax
+for links, allowing for two styles: &lt;em&gt;inline&lt;&#x2F;em&gt; and &lt;em&gt;reference&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Inline image syntax looks like this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;![Alt text](&#x2F;path&#x2F;to&#x2F;img.jpg)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;![Alt text](&#x2F;path&#x2F;to&#x2F;img.jpg &amp;quot;Optional title&amp;quot;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;That is:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;An exclamation mark: &lt;code&gt;!&lt;&#x2F;code&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;followed by a set of square brackets, containing the &lt;code&gt;alt&lt;&#x2F;code&gt;
+attribute text for the image;&lt;&#x2F;li&gt;
+&lt;li&gt;followed by a set of parentheses, containing the URL or path to
+the image, and an optional &lt;code&gt;title&lt;&#x2F;code&gt; attribute enclosed in double
+or single quotes.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Reference-style image syntax looks like this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;![Alt text][id]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Where &quot;id&quot; is the name of a defined image reference. Image references
+are defined using syntax identical to link references:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;[id]: url&#x2F;to&#x2F;image  &amp;quot;Optional title attribute&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;As of this writing, Markdown has no syntax for specifying the
+dimensions of an image; if this is important to you, you can simply
+use regular HTML &lt;code&gt;&amp;lt;img&amp;gt;&lt;&#x2F;code&gt; tags.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;misc&quot;&gt;Miscellaneous&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;autolink&quot;&gt;Automatic Links&lt;&#x2F;h3&gt;
+&lt;p&gt;Markdown supports a shortcut style for creating &quot;automatic&quot; links for URLs and email addresses: simply surround the URL or email address with angle brackets. What this means is that if you want to show the actual text of a URL or email address, and also have it be a clickable link, you can do this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;http:&#x2F;&#x2F;example.com&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Markdown will turn this into:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;a href=&amp;quot;http:&#x2F;&#x2F;example.com&#x2F;&amp;quot;&amp;gt;http:&#x2F;&#x2F;example.com&#x2F;&amp;lt;&#x2F;a&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Automatic links for email addresses work similarly, except that
+Markdown will also perform a bit of randomized decimal and hex
+entity-encoding to help obscure your address from address-harvesting
+spambots. For example, Markdown will turn this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;address@example.com&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;into something like this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;a href=&amp;quot;&amp;amp;#x6D;&amp;amp;#x61;i&amp;amp;#x6C;&amp;amp;#x74;&amp;amp;#x6F;:&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;&amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;amp;#109;&amp;quot;&amp;gt;&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;&amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;&amp;amp;#109;&amp;lt;&#x2F;a&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;which will render in a browser as a clickable link to &quot;address@example.com&quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;(This sort of entity-encoding trick will indeed fool many, if not
+most, address-harvesting bots, but it definitely won&#x27;t fool all of
+them. It&#x27;s better than nothing, but an address published in this way
+will probably eventually start receiving spam.)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;backslash&quot;&gt;Backslash Escapes&lt;&#x2F;h3&gt;
+&lt;p&gt;Markdown allows you to use backslash escapes to generate literal
+characters which would otherwise have special meaning in Markdown&#x27;s
+formatting syntax. For example, if you wanted to surround a word
+with literal asterisks (instead of an HTML &lt;code&gt;&amp;lt;em&amp;gt;&lt;&#x2F;code&gt; tag), you can use
+backslashes before the asterisks, like this:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;\*literal asterisks\*
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Markdown provides backslash escapes for the following characters:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#0f1419;color:#bfbab0;&quot;&gt;&lt;code&gt;&lt;span&gt;\   backslash
+&lt;&#x2F;span&gt;&lt;span&gt;`   backtick
+&lt;&#x2F;span&gt;&lt;span&gt;*   asterisk
+&lt;&#x2F;span&gt;&lt;span&gt;_   underscore
+&lt;&#x2F;span&gt;&lt;span&gt;{}  curly braces
+&lt;&#x2F;span&gt;&lt;span&gt;[]  square brackets
+&lt;&#x2F;span&gt;&lt;span&gt;()  parentheses
+&lt;&#x2F;span&gt;&lt;span&gt;#   hash mark
+&lt;&#x2F;span&gt;&lt;span&gt;+	plus sign
+&lt;&#x2F;span&gt;&lt;span&gt;-	minus sign (hyphen)
+&lt;&#x2F;span&gt;&lt;span&gt;.   dot
+&lt;&#x2F;span&gt;&lt;span&gt;!   exclamation mark
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+</feed>
